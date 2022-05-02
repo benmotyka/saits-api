@@ -1,14 +1,14 @@
 import { Router } from "express";
 
-import { notifySaitsContactMail } from "./controllers/notify";
+import { saitsContactForm, kisContactForm, kisNewsletter } from "./controllers/notify";
 
 const router = Router();
 
 // SAITS
-router.post("/saits/contact-mail", notifySaitsContactMail);
+router.post("/saits/contact", saitsContactForm);
 
 // KIS
-router.post("/kis/contact-mail", notifySaitsContactMail);
-router.post("/kis/newsletter", notifySaitsContactMail);
+router.post("/kis/contact", kisContactForm);
+router.post("/kis/newsletter", kisNewsletter);
 
 export default router;

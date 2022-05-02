@@ -1,19 +1,18 @@
 import express from 'express';
 import routes from './routes';
-// import bodyParser from 'body-parser';
-import dotenv from 'dotenv';
-
-dotenv.config();
+import bodyParser from 'body-parser';
+import cors from "cors";
+import helmet from "helmet";
 
 const app = express();
 const port = 3000;
 
-// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-// app.use(bodyParser.json({ limit: '15mb' }));
-
+app.use(helmet());
+app.use(cors());
 app.use('/', routes);
 
 app.listen(port, () => {
-  console.log(`App runnig on port ${port}.`);
+  console.log(`App running on port ${port}.`);
 });
