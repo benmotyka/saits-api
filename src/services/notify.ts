@@ -23,12 +23,20 @@ const createTransporter = () => {
 
 const transporter = createTransporter();
 
-export const sendEmailToSaits = async (payload: {
+export const sendEmailToSaits = async ({
+  subject,
+  message,
+}: {
   subject: string;
-  html: string;
+  message: string;
 }) => {
   try {
-    return await transporter.sendMail({...payload, to: process.env.SAITS_EMAIL, from: process.env.SAITS_EMAIL});
+    return await transporter.sendMail({
+      subject,
+      text: message,
+      to: process.env.SAITS_EMAIL,
+      from: process.env.SAITS_EMAIL,
+    });
   } catch (error) {
     console.log(error.message);
   }
