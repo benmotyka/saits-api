@@ -4,6 +4,10 @@ import { saitsContactForm, kisContactForm, kisNewsletter } from "./controllers/n
 
 const router = Router();
 
+router.get("/status", (req, res) => {
+    return res.json('ok')
+});
+
 // SAITS
 router.post("/saits/contact", saitsContactForm);
 
