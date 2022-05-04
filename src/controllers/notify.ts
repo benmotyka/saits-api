@@ -14,6 +14,7 @@ export const saitsContactForm = async (
         subject: 'Email z formularza kontaktowego na stronie saits.prz.edu.pl',
         message: `Adresat: ${senderEmail}, temat: "${subject}", wiadomość: "${message}"`
     })
+
     return res.json("ok");
   } catch (error) {
     console.log(error);
@@ -34,6 +35,7 @@ export const kisContactForm = async (
         subject: 'Email z formularza kontaktowego na stronie keepitsecure.prz.edu.pl',
         message: `Adresat: ${senderName} (${senderEmail}), temat: "${subject}", Wiadomość: "${message}"`
     })
+
     return res.json("ok");
   } catch (error) {
     console.log(error);
@@ -54,6 +56,7 @@ export const kisNewsletter = async (
         subject: 'Powiadomienie o dołączeniu do newslettera na stronie keepitsecure.prz.edu.pl',
         message: `Odwiedzający: ${email} chciałby dołączyć do newslettera i otrzymywać powiadomienia o kolejnych wydarzeniach`
     })
+
     return res.json("ok");
   } catch (error) {
     console.log(error);

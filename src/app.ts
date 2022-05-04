@@ -6,10 +6,18 @@ import helmet from "helmet";
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(helmet());
-app.use(cors({ origin: ["https://saits.prz.edu.pl", "https://keepitsecure.prz.edu.pl"] }));
+app.use(
+  cors({
+    origin: [
+      "https://saits.prz.edu.pl",
+      "https://keepitsecure.prz.edu.pl",
+      "http://127.0.0.1:5500", // dev
+    ],
+  })
+);
 
 app.use("/", routes);
 
