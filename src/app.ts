@@ -13,8 +13,9 @@ app.use(
   cors({
     origin: [
       "https://saits.prz.edu.pl",
+      "http://saits.prz.edu.pl",
       "https://keepitsecure.prz.edu.pl",
-      "http://127.0.0.1:5500", // dev
+      "http://keepitsecure.prz.edu.pl",
     ],
   })
 );
