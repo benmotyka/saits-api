@@ -23,18 +23,20 @@ const createTransporter = () => {
 
 const transporter = createTransporter();
 
-export const sendEmailToSaits = async ({
+export const sendTextEmail = async ({
   subject,
   message,
+  receiver
 }: {
   subject: string;
   message: string;
+  receiver: string;
 }) => {
   try {
     return await transporter.sendMail({
       subject,
       text: message,
-      to: process.env.SAITS_EMAIL,
+      to: receiver,
       from: process.env.SAITS_EMAIL,
     });
   } catch (error) {
