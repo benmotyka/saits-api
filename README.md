@@ -9,7 +9,6 @@
   <h3 align="center">Science Club</h3>
   <h5 align="center">Back-end App</h5>
   <p align="center">
-    <a href="https://saits.prz.edu.pl"><h4>Explore the page »</h4></a>
     <a href="https://github.com/benmotyka/saits_api/issues">Report Bug</a>
     ·
     <a href="https://github.com/benmotyka/saits_api/issues">Request Feature</a>
