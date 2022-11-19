@@ -70,11 +70,11 @@ Please refer to [https://github.com/benmotyka/saits_front](https://github.com/be
    ```sh
    npm install
    ```
-3. Create `.env` file and enter:
+3. Create `.env` file and enter (see .env.example for example envs):
    ```
-   PORT=<backend_app_port> // eg: 3001
-   SMTP_HOST=<host> // eg: smtp.gmail.com
-   SMTP_PORT=<port> // eg: 465
+   PORT=<backend_app_port>
+   SMTP_HOST=<host>
+   SMTP_PORT=<port>
    SMTP_USER=<email>
    SMTP_PASSWORD=<password>
    SAITS_EMAIL=<email>
@@ -103,14 +103,6 @@ Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LICENSE
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
- -->
-
 ## Contact
 
 Ben Motyka - [LinkedIn](https://www.linkedin.com/in/ben-motyka-97a729240/) - benmotykax@gmail.com
@@ -119,3 +111,9 @@ Project Link: [https://github.com/benmotyka/saits_api](https://github.com/benmot
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgments
+
+* [SAITS Website](https://saits.prz.edu.pl)
+* [KIS Website](https://keepitsecure.prz.edu.pl)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
