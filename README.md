@@ -113,7 +113,7 @@ Project Link: [https://github.com/benmotyka/saits_api](https://github.com/benmot
 
 ## Acknowledgments
 
-* [SAITS Website](https://saits.prz.edu.pl)
-* [KIS Website](https://keepitsecure.prz.edu.pl)
+* [SAITS Website](https://github.com/benmotyka/saits_front)
+* [KIS Website](https://github.com/benmotyka/kis_front)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
