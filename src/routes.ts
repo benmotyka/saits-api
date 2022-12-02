@@ -1,13 +1,15 @@
 import { Router } from "express";
 
-import { saitsContactForm, kisContactForm, kisNewsletter } from "./controllers/notify";
+import {
+  saitsContactForm,
+  kisContactForm,
+  kisNewsletter,
+} from "./controllers/notify";
 import captcha from "./middleware/captcha";
 
 const router = Router();
 
-router.get("/status", (req, res) => {
-    return res.json('ok')
-});
+router.get("/status", (req, res) => res.json("ok"));
 
 // SAITS
 router.post("/saits/contact", captcha, saitsContactForm);

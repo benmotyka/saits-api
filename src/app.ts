@@ -3,6 +3,7 @@ import routes from "./routes";
 import bodyParser from "body-parser";
 import cors from "cors";
 import helmet from "helmet";
+import loggingMiddleware from "./middleware/log";
 
 const app = express();
 
@@ -18,8 +19,9 @@ app.use(
       "http://keepitsecure.prz.edu.pl",
     ],
   })
-);
-
+  );
+  
+app.use(loggingMiddleware);
 app.use("/", routes);
 
 const port = process.env.PORT || 3000;
