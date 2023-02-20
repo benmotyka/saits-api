@@ -63,9 +63,10 @@ Please refer to [https://github.com/benmotyka/saits_front](https://github.com/be
 
 ### Installation
 
-1. Clone this repo
+1. Clone this repo and enter project
    ```sh
    git clone https://github.com/benmotyka/saits_api.git
+   cd saits_api/
    ```
 2. Install NPM packages
    ```sh
